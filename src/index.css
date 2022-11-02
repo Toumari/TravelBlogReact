@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+.navbar {
+  background-color: #5a6ff5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar--items {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.navbar--icon {
+  font-size: 2rem;
+  color: White;
+  margin-right: 1rem;
+}
+
+.navbar--title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.travel--tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: .75rem;
+  padding: 1rem;
+  
+  border-radius: 5px;
+ 
+}
+
+.traveltile--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.traveltile--image {
+  width: 100%;
+  
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: center;
+}
+
+.traveltile--title {
+  margin-top: .75rem;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  color: #5a6ff5;
+}
+
+.traveltile--location {
+  margin-top: 1.5rem;
+}
+
+.traveltile--dates {
+  margin-top: .5rem;
+}
+
+.traveltile--location,
+.traveltile--dates {
+  margin-bottom: 0rem;
+  font-size: 1rem;
+  color: #5a6ff5;
+}
+
+.traveltile--description {
+  text-align: center;
+  margin: .75rem 0;
+  font-size: .9rem;
+  color: #5a6ff5;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .travel--tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .traveltile--title {
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+    color: #5a6ff5;
+  }
+
+  .traveltile--location,
+  .traveltile--dates {
+    margin-top: .65rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: #5a6ff5;
+  }
+
+ 
+
+  .traveltile--details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1rem;
+  }
+
+  .traveltile--description {
+   
+    margin-top: 1.5rem;
+    text-align: left;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #5a6ff5;
+    max-width: 80%;
+  }
+
+  .traveltile--image {
+    height: 400px;
+    width: 300px;
+    margin-right: 1rem;
+    
+  }
+
+}
+
